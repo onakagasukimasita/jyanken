@@ -8,6 +8,11 @@ const hand = { gu: "✊", ch: "✌️", pa: "✋" };
 let ELM_CP_RESULT = document.getElementById("cp_result");
 let ELM_KEKKA = document.getElementById("game_result");
 
+//0. HTMLが開いたら実行されるfunction
+function onloadJyankenEvent(){
+    //BGMが鳴るよ
+}
+
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
 async function jyanken(my_hand) {
     ELM_CP_RESULT = document.getElementById("cp_result");
