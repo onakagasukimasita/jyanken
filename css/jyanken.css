@@ -9,6 +9,8 @@ body>div{
     padding:1em;
     text-align: center;
 }
+#start_button{
+}
 #game{
     display: none;   
 }
