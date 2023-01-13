@@ -9,10 +9,6 @@ let ELM_CP_RESULT = document.getElementById("cp_result");
 let ELM_KEKKA = document.getElementById("game_result");
 let BGM1;
 
-//0. HTMLの特定の部分がロードされたら実行される
-function onloadJyankenEvent(){
-
-}
 
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
 async function jyanken(my_hand) {
