@@ -9,22 +9,9 @@ let ELM_CP_RESULT = document.getElementById("cp_result");
 let ELM_KEKKA = document.getElementById("game_result");
 let BGM1;
 
-//0. HTMLが開いたら実行されるやつ
+//0. HTMLの特定の部分がロードされたら実行される
 function onloadJyankenEvent(){
 
-    //audioオブジェクトを生成する
-    //ファイルを作ってその場所とファイル名を書く
-    BGM1 = new Audio("./sound/bgm01.mp3");
-    
-    //audioオブジェクトの設定をする
-    BGM1.loop = true;
-    
-    //audioオブジェクトのファンクションを呼び出す
-    BGM1.play();
-}
-
-function bgmPause(){
-    BGM1.pause();
 }
 
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
