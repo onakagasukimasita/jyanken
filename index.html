@@ -9,7 +9,9 @@
         <!-- CSS//-->
         <link rel="stylesheet" href="./css/jyanken.css">
         <script src="./js/jyanken.js"></script>
-        <script src="./js/event/startgame.js"></script>
+        <script src="./js/event/onload.js"></script>
+        <script src="./js/event/btn_startgame.js"></script>
+        <script src="./js/event/btn_reset.js"></script>
         <script src="./js/gamesystem/score.js"></script>
     </head>
     <body onload="onloadJyankenEvent()">
@@ -50,7 +52,10 @@
             </dl>
 
             <!-- 5. リセットボタン//-->
-            <div id="reset_button" onclick="location.reload();">リセット</div>
+            <div id="reset_button" onclick="reset();">リセット</div>
+            
+            <!-- 5. リセットボタン//-->
+            <div id="bgm_button" onclick="bgmOnOff();">リセット</div>
         </div>
     </body>
 </html>
