@@ -21,7 +21,7 @@ body>div{
     font-size:70px;
     display: inline-block; 
 }
-#reset_button{
+.btn_large{
     display: block;
     background-color:  #ccc;
     width:100px;
