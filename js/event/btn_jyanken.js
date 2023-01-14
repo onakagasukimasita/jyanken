@@ -50,7 +50,7 @@ async function jyanken(my_hand) {
 function showResult(res, cp_hand) {
     ELM_CP_RESULT = document.getElementById("cp_result");
     ELM_CP_RESULT.innerText = HAND[cp_hand];
-    ELM_KEKKA.innerText = RESULT_DEFAULT;
+    ELM_KEKKA.innerText = res;
 }
 
 function resetResult() {
