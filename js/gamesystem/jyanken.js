@@ -63,3 +63,16 @@ function getRandomlyZeroToTwo() {
     return Math.floor(Math.random() * 3);
 }
 
+resultExchanger(result,win,lose,even){
+    //勝ち・負けに応じた結果を選ぶ
+    if (result === r_win) {
+        return win;
+    } else if (result === r_lose) {
+        return lose;
+    } else if (result === r_even) {
+        return even;
+    } else {
+        throw 'Parameter is not a hand!';
+    }   
+}
+
