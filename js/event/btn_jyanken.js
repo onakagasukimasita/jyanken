@@ -2,7 +2,8 @@
 // requires js/gamesystem/score.js
 let ELM_CP_RESULT;
 let ELM_KEKKA;
-const hand = { gu: "✊", ch: "✌️", pa: "✋" };
+const RESULT_DEFAULT = "ジャンケンしようぜ";
+const HAND = { gu: "✊", ch: "✌️", pa: "✋" };
 
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
 async function jyanken(my_hand) {
@@ -30,6 +31,10 @@ async function jyanken(my_hand) {
 
 function showResult(res, cp_hand) {
     ELM_CP_RESULT = document.getElementById("cp_result");
-    ELM_CP_RESULT.innerText = hand[cp_hand];
-    ELM_KEKKA.innerText = res;
+    ELM_CP_RESULT.innerText = HAND[cp_hand];
+    ELM_KEKKA.innerText = RESULT_DEFAULT;
+}
+
+function resetResult() {
+    ELM_KEKKA.innerText = RESULT_DEFAULT;
 }
