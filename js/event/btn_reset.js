@@ -1,7 +1,7 @@
 // requires /js/gamesystem/score.js
 // requires /js/event/show_score.js
 
-reset(){
+function reset(){
   resetScore();
   showScore():
 }
