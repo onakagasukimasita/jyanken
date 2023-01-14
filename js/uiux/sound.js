@@ -21,8 +21,13 @@ function bgmPause(){
     BGM.pause();
 }
 
-function bgmPause(){
-    BGM.pause();
+function bgmOnOff(){
+    if(BGM.muted){
+       BGM.muted = false;
+    }else{
+       BGM.muted = true;
+    }
+        
 }
 
 //2. ボタンを押したら効果音
