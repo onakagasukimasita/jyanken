@@ -1,5 +1,7 @@
 // requires js/gamesystem/jyanken.js
 // requires js/gamesystem/score.js
+// requires js/gamesystem/victories_in_a_row.js
+// requires js/event/show_status.js
 let ELM_CP_RESULT;
 let ELM_KEKKA;
 const RESULT_DEFAULT = "ジャンケンしようぜ";
@@ -14,38 +16,26 @@ async function jyanken(my_hand) {
     //1. 結果を取得する
     let result = getKekka(cp_hand, my_hand);
     let showing_result;
+    
     //勝ち・負け
-    if (result === r_win) {
-        showing_result =  "勝ち!";
-    } else if (result === r_lose) {
-        showing_result = "負け!";
-    } else if (result === r_even) {
-        showing_result = "あいこ!";
-    } else {
-        throw 'Parameter is not a hand!';
-    }
-
+    showing_result = resultExchenger(result,"勝ち!","負け!","あいこ!");
     showResult(showing_result, cp_hand);
     
+    showVIR(victories_in_a_row(result));
+    
     //ichihachiの場合はaddScoreIchiHachi
-            console.log(result);
     switch (result){
         case r_win:
-            console.log("win"+result);
             addScore();
             break;
         case r_lose:
-            console.log("lose"+result);
             lostScore();
             break;
         case r_even:
-            console.log("even"+result);
             //do nothing;
     }
-    showScore();
+    showScore(my_score);
 }
-
-
 
 function showResult(res, cp_hand) {
     ELM_CP_RESULT = document.getElementById("cp_result");
