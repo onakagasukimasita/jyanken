@@ -4,7 +4,6 @@ const hand_paa = "pa";
 const r_even = "even";
 const r_win = "win";
 const r_lose = "lose";
-const hand = { gu: "✊", ch: "✌️", pa: "✋" };
 
 //2. CPが、自分の手を決める処理
 function getCpHand() {
