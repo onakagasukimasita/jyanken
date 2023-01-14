@@ -56,17 +56,7 @@ function getKekka(cp_hand, my_hand) {
     } else {
         throw 'Parameter is not a hand!';
     }
-
-    //勝ち・負け
-    if (result === r_win) {
-        return "勝ち!";
-    } else if (result === r_lose) {
-        return "負け!";
-    } else if (result === r_even) {
-        return "あいこ!";
-    } else {
-        throw 'Parameter is not a hand!';
-    }
+    return result;
 }
 
 function getRandomlyZeroToTwo() {

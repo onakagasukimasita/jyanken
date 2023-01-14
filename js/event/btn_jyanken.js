@@ -13,21 +13,39 @@ async function jyanken(my_hand) {
     let cp_hand = getCpHand();
     //1. 結果を取得する
     let result = getKekka(cp_hand, my_hand);
-    showResult(result, cp_hand);
+    let showing_result;
+    //勝ち・負け
+    if (result === r_win) {
+        showing_result =  "勝ち!";
+    } else if (result === r_lose) {
+        showing_result = "負け!";
+    } else if (result === r_even) {
+        showing_result = "あいこ!";
+    } else {
+        throw 'Parameter is not a hand!';
+    }
+
+    showResult(showing_result, cp_hand);
     
     //ichihachiの場合はaddScoreIchiHachi
+            console.log(result);
     switch (result){
         case r_win:
+            console.log("win"+result);
             addScore();
             break;
         case r_lose:
+            console.log("lose"+result);
             lostScore();
             break;
         case r_even:
+            console.log("even"+result);
             //do nothing;
     }
     showScore();
 }
+
+
 
 function showResult(res, cp_hand) {
     ELM_CP_RESULT = document.getElementById("cp_result");

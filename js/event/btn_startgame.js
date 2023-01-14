@@ -13,6 +13,9 @@ function startgame(){
   
   //ファイルを作ってその場所とファイル名を書く
   bgmPlay();
+
+  //点数をリセットする
+  resetScore();
   
   //ゲームを表示する
 　game_area = document.getElementById("game");

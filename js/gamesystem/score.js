@@ -1,7 +1,7 @@
 let my_score;
 let cp_score;
-const winning_point = "1";
-const losing_point = "1";
+const winning_point = 1;
+const losing_point = 1;
 
 //初期状態
 function resetScore(){

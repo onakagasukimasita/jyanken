@@ -3,9 +3,7 @@
         <!-- 画面に表示しない内容//-->
         <title>じゃんけんげーむ</title>
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
         <!-- CSS//-->
         <link rel="stylesheet" href="./css/jyanken.css">
         <script src="./js/event/onload.js"></script>
@@ -19,7 +17,7 @@
     </head>
     <body onload="onloadJyankenEvent()">
         
-        <input type="button" value="Show" onclick="startgame();" id="start_button"/>
+        <input type="button" value="game start" onclick="startgame();" id="start_button" class="btn_large"/>
         <div id="game">
             <!-- 1. タイトル//-->
             <h1>ジャンゲンゲーム</h1>
@@ -47,8 +45,8 @@
                 <dt>my score</dt>
                 <dd id="my_score">0</dd>
                 
-                <dt>cp score</dt>
-                <dd id="cp_score">0</dd>
+                <!-- //dt>cp score</dt>
+                <dd id="cp_score">0</dd //-->
                 
                 <dt>victories in a row</dt>
                 <dd id="victories_in_a_row">0</dd>
