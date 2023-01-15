@@ -3,6 +3,7 @@
 let victories = 0;
 
 function victories_in_a_row(result){
-  victories = resultExchanger(result,victories+victories,0,victories);
+  //勝利ごとに連勝記録を1追加する
+  victories = resultExchanger(result,victories+1,0,victories);
   return victories;
 }
