@@ -3,5 +3,6 @@
 
 function reset(){
   resetScore();
-  showScore();
+  //gamesystem/score内に記述したローカル変数を利用する
+  showScore(my_score);
 }
