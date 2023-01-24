@@ -12,7 +12,7 @@ function reset() {
   ELM_game_area.style.display = "none";
   ELM_start_button.style.display = "block";
   ELM_area_my_score.style.display = "none";
-  ELM_img_main.src = "./jyanken_start.jpg";
+  ELM_img_main.src = "./img/jyanken_start.jpg";
   ELM_img_main.style.display = "block";
   ELM_rank_area.style.display = "block";
   ELM_img_cp.style.display =  "none";
