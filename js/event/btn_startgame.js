@@ -30,7 +30,7 @@ function startgame(){
   ELM_area_game.style.display = "block";
   ELM_area_my_score.style.display = "block";
   ELM_area_set.innerHTML ="";
-  ELM_cp_result.innerText = "";
+  ELM_cp_result.innerText = "？";
 
   ELM_area_start.style.display = "none";
   ELM_area_ranking.style.display = "none";
