@@ -19,7 +19,8 @@ const MY_SOCORE = "my_score";
 const AREA_MY_SOCORE = "area_my_score";
 const AREA_VIR = "victories_in_a_row";
 const AREA_SET = "set_num";
-
+const CP_RESULT = "cp_result";
+const GAME_RESULT = "game_result";
 
 const WINNING_POINT = 1;
 const LOSING_POINT = 1;
