@@ -6,6 +6,10 @@ body {
     padding: 0;
 }
 
+#main_img{
+    max-width: 100%;
+}
+
 body>div {
     background-color: rgb(243, 185, 237);
     max-width: 320px;
@@ -20,11 +24,18 @@ h1 {
 }
 
 #start_button {}
-
-#game {
+#turns{
+    display: flex;
+    list-style:none;
+}
+#game,#ranking,#area_my_score,#cp_img,#me_img {
     display: none;
 }
-
+#cp_img,#me_img{
+    display: inline-block;
+    margin: 0;
+    max-width: 40%;
+}
 #cp_result {
     font-size: 10em;
 }

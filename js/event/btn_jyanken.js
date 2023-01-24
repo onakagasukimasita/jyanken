@@ -2,15 +2,10 @@
 // requires js/gamesystem/score.js
 // requires js/gamesystem/victories_in_a_row.js
 // requires js/event/show_status.js
-let ELM_CP_RESULT;
-let ELM_KEKKA;
-const RESULT_DEFAULT = "ジャンケンしようぜ";
-const HAND = { gu: "✊", ch: "✌️", pa: "✋" };
 
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
 async function jyanken(my_hand) {
-    ELM_KEKKA = document.getElementById("game_result");
-    ELM_KEKKA.innerHTML = "じゃ～んけ～ん...";
+    ELM_kekka.innerHTML = "じゃ～んけ～ん...";
     //0. PCの手を確定する
     let cp_hand = getCpHand();
     //1. 結果を取得する
@@ -25,24 +20,33 @@ async function jyanken(my_hand) {
     
     //ichihachiの場合はaddScoreIchiHachi
     switch (result){
-        case r_win:
+        case R_WIN:
             addScore();
+            showPlayerWin();
             break;
-        case r_lose:
+        case R_LOSE:
             lostScore();
+            showPlayerLose();
             break;
-        case r_even:
+        case R_EVEN:
+            showPlayerEven();
             //do nothing;
     }
     showScore(my_score);
+    setResult(result);
+    showGamesOfASet(resultEachGames);
+    setCount();
+    if(remaining_games<1) {
+        setHighScore();
+        gameOver();
+    }
 }
 
 function showResult(res, cp_hand) {
-    ELM_CP_RESULT = document.getElementById("cp_result");
-    ELM_CP_RESULT.innerText = HAND[cp_hand];
-    ELM_KEKKA.innerText = res;
+    ELM_cp_result.innerText = HAND[cp_hand];
+    ELM_kekka.innerText = res;
 }
 
 function resetResult() {
-    ELM_KEKKA.innerText = RESULT_DEFAULT;
+    ELM_kekka.innerText = RESULT_DEFAULT;
 }

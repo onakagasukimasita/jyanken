@@ -1,33 +1,36 @@
 <html lang="ja">
     <head>
         <!-- 画面に表示しない内容//-->
-        <title>じゃんけんげーむ</title>
+        <title>JYANKEN</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes" />
         <!-- CSS//-->
         <link rel="stylesheet" href="./css/jyanken.css">
+        <script src="./js/const_variables.js"></script>
         <script src="./js/event/onload.js"></script>
         <script src="./js/event/btn_startgame.js"></script>
         <script src="./js/event/btn_jyanken.js"></script>
         <script src="./js/event/btn_reset.js"></script>
         <script src="./js/event/show_status.js"></script>
+        <script src="./js/event/game_over.js"></script>
         <script src="./js/gamesystem/score.js"></script>
+        <script src="./js/gamesystem/turns.js"></script>
         <script src="./js/gamesystem/victoriesinarow.js"></script>
         <script src="./js/gamesystem/jyanken.js"></script>
         <script src="./js/uiux/sound.js"></script>
     </head>
     <body onload="onloadJyankenEvent()">
-        
+        <!-- 1. タイトル//-->
+        <h1><img id="main_img" src="./jyanken_start.jpg" alt="ジャンゲンゲーム"></h1>
         <input type="button" value="game start" onclick="startgame();" id="start_button" class="btn_large"/>
         <div id="game">
-            <!-- 1. タイトル//-->
-            <h1>ジャンゲンゲーム</h1>
-
+            <img id="cp_img" src="./cp01.jpg" alt="こんぴゅた">
+            <img id="me_img" src="./me01.jpg" alt="じぶん">
+            <!-- 7. 結果を表示するエリア//-->
+            <div id="game_result">じゃんけんしようぜ！</div>
             <!-- 6. コンピュータの手//-->
             <div id="cp_result">✊</div>
 
-            <!-- 7. 結果を表示するエリア//-->
-            <div id="game_result">じゃんけんしようぜ！</div>
 
             <!-- 2. 自分の手（グー）//-->
             <div id="my_hand-gu" class="my_hand" onclick="jyanken('gu');">✊</div>
@@ -38,9 +41,13 @@
             <!-- 4. 自分の手（パー）//-->
             <div id="my_hand-pa" class="my_hand" onclick="jyanken('pa');">✋</div>
             
+            <!-- 5. リセットボタン//-->
+            <div id="reset_button" onclick="reset();" class="btn_large">リセット</div>
+        </div>
+        <div id="area_my_score">
             <h2>スコア</h2>
             <dl>
-                <dt>set</dt>
+                <dt>turns</dt>
                 <dd id="set_num">0</dd>
          
                 <dt>my score</dt>
@@ -52,12 +59,10 @@
                 <dt>victories in a row</dt>
                 <dd id="victories_in_a_row">0</dd>
             </dl>
-
-            <!-- 5. リセットボタン//-->
-            <div id="reset_button" onclick="reset();" class="btn_large">リセット</div>
-            
-            <!-- 5. BGMオンオフボタン//-->
-            <div id="bgm_button" onclick="bgmOnOff();" class="btn_large">bgm on/off</div>
         </div>
+        <div id="ranking"></div>
+            
+        <!-- 5. BGMオンオフボタン//-->
+        <div id="bgm_button" onclick="bgmOnOff();" class="btn_large">bgm on/off</div>
     </body>
 </html>
