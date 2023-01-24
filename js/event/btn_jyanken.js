@@ -5,21 +5,22 @@
 
 //1. ユーザーが、自分の手を決めるボタンを押した際、の処理
 async function jyanken(my_hand) {
-    ELM_kekka.innerHTML = "じゃ～んけ～ん...";
+    disableBtns(my_hand);
+    await rouletteAnimation();
     //0. PCの手を確定する
     let cp_hand = getCpHand();
     //1. 結果を取得する
     let result = getKekka(cp_hand, my_hand);
     let showing_result;
-    
+
     //勝ち・負け
-    showing_result = resultExchanger(result,"勝ち!","負け!","あいこ!");
+    showing_result = resultExchanger(result, "勝ち!", "負け!", "あいこ!");
     showResult(showing_result, cp_hand);
-    
+
     showVIR(victories_in_a_row(result));
-    
+
     //ichihachiの場合はaddScoreIchiHachi
-    switch (result){
+    switch (result) {
         case R_WIN:
             addScore();
             showPlayerWin();
@@ -30,16 +31,17 @@ async function jyanken(my_hand) {
             break;
         case R_EVEN:
             showPlayerEven();
-            //do nothing;
+        //do nothing;
     }
     showScore(my_score);
     setResult(result);
     showGamesOfASet(resultEachGames);
     setCount();
-    if(remaining_games<1) {
+    if (remaining_games < 1) {
         setHighScore();
         gameOver();
     }
+    ableBtns();
 }
 
 function showResult(res, cp_hand) {

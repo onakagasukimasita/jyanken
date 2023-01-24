@@ -1,5 +1,5 @@
 let my_score;
-let high_scores = [5,4,3,2,1];
+let high_scores = [500,400,300,200,100];
 //let cp_score;
 //初期状態
 function resetScore(){
@@ -9,7 +9,12 @@ function resetScore(){
 
 //変更
 function addScore(){
-  my_score = my_score + WINNING_POINT;
+  if(victories>0){
+    my_score = my_score + WINNING_POINT*victories;
+
+  }else{
+    my_score = my_score + WINNING_POINT;
+  }
 }
 
 function addScoreIchiHachi(my_hand){

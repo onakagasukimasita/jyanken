@@ -15,19 +15,27 @@ function startgame(){
 
   //点数をリセットする
   resetScore();
+
   //ゲーム数をリセットする
   resetTurns();
   
   //ゲームを表示する
-  ELM_game_area.style.display = "block";
-  ELM_start_button.style.display = "none";
-  ELM_rank_area.style.display = "none";
-  ELM_area_my_socre.style.display = "block";
-  ELM_img_main.style.display = "none";
   ELM_img_cp.style.display =  "inline-block";
-  ELM_img_cp.style.src =  "./cp01.jpg";
   ELM_img_me.style.display =  "inline-block";
+  ELM_img_cp.style.src =  "./cp01.jpg";
   ELM_img_me.style.src = "./me01.jpg";
+
+  ELM_btn_reset.style.display = "inline-block";
+
+  ELM_area_game.style.display = "block";
+  ELM_area_my_score.style.display = "block";
   ELM_area_set.innerHTML ="";
+  ELM_cp_result.innerText = "";
+
+  ELM_area_start.style.display = "none";
+  ELM_area_ranking.style.display = "none";
+  ELM_img_main.style.display = "none";
+  ELM_btn_start.style.display = "none";
+
   
 }
