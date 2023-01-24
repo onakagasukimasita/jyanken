@@ -24,9 +24,9 @@ function gameOver(){
   ELM_rank_area.style.display = "block";
   showHighScore(high_scores);
   
-  ELM_img_main.src="./gameover.jpg";
+  ELM_img_main.src="./img/gameover.jpg";
   ELM_img_main.style.display = "block";
 
-  ELM_img_cp.src="./cp01.jpg";
-  ELM_img_me.src="./me01.jpg";
+  ELM_img_cp.src="./img/cp01.jpg";
+  ELM_img_me.src="./img/me01.jpg";
 }
