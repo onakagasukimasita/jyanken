@@ -1,8 +1,8 @@
 
 //0. HTMLの特定の部分がロードされたら実行される
 function onloadJyankenEvent() {
-    ELM_cp_result = document.getElementById("cp_result");
-    ELM_kekka = document.getElementById("game_result");
+    ELM_cp_result = document.getElementById(CP_RESULT);
+    ELM_kekka = document.getElementById(GAME_RESULT);
     ELM_game_area = document.getElementById(AREA_GAME);
     ELM_start_button = document.getElementById(AREA_BTN_START);
     ELM_rank_area = document.getElementById(AREA_RANKING);
