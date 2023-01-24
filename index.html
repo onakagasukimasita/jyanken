@@ -25,7 +25,14 @@
 <body onload="onloadJyankenEvent()">
     <div id="start_page">
         <!-- 1. タイトル//-->
-        <h1><img id="main_img" src="./img/jyanken_start.jpg" alt="ジャンゲンゲーム"></h1>
+        <h1>
+            <svg viewBox="0 0 600 600">
+                <image xlink:href="./img/jyanken_start.jpg" id="anime_imgd" alt="ジャンゲンゲーム"></image>/>
+                <image id="anime_imgc" xlink:href="" />
+                <image id="anime_imgb" xlink:href="" />
+                <image id="anime_imga" xlink:href="" />
+            </svg>
+        </h1>
         <input type="button" value="game start" onclick="startgame();" id="start_button" class="btn_large" />
     </div>
     <div id="game">

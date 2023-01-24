@@ -56,12 +56,13 @@ h1 {
 
 #cp_result {
     font-size: 10em;
+    height: 238px;
 }
 
 .my_hand {
     font-size: 4em;
     display: inline-block;
-    background-color: #e3364a;
+    background-color: #d77f89;
     box-shadow: 0 5px 0 #ca1c30;
     border-radius: 60px;
 }

@@ -23,29 +23,16 @@ function showVIR(vir) {
 
 function showGamesOfASet(games) {
 
-  turnsOl= document.createElement("ol");
+  turnsOl = document.createElement("ol");
   turnsOl.setAttribute('id', 'turns');
-  games.forEach(function(result){
+  games.forEach(function (result) {
     let li = document.createElement("li");
-    li.innerText = resultExchanger(result,"〇","×","△");
+    li.innerText = resultExchanger(result, "〇", "×", "△");
     turnsOl.append(li);
   });
-  
-  tmldiv= document.createElement("div");
+
+  tmldiv = document.createElement("div");
   tmldiv.append(turnsOl);
 
   ELM_area_set.innerHTML = tmldiv.innerHTML;
-}
-
-function showPlayerWin(){
-  ELM_img_cp.src ="./img/cp02.jpg";
-  ELM_img_me.src ="./img/me03.jpg";
-}
-function showPlayerLose(){
-  ELM_img_cp.src ="./img/cp03.jpg";
-  ELM_img_me.src ="./img/me02.jpg";
-}
-function showPlayerEven(){
-  ELM_img_cp.src ="./img/cp01.jpg";
-  ELM_img_me.src ="./img/me01.jpg";
 }

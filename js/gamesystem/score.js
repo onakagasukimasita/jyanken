@@ -1,5 +1,5 @@
 let my_score;
-let high_scores = [500,400,300,200,100];
+let high_scores = [300,200,100,50,10];
 //let cp_score;
 //初期状態
 function resetScore(){

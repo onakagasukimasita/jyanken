@@ -26,6 +26,14 @@ const BTN_MY_HAND = "my_hand";
 const BTN_MY_HAND_GUU = "my_hand-gu";
 const BTN_MY_HAND_CHYOKI = "my_hand-ch";
 const BTN_MY_HAND_PAA = "my_hand-pa";
+const ANM_IMG_D = "./img/jyankend_";
+const ANM_IMG_C = "./img/jyankenc_";
+const ANM_IMG_B = "./img/jyankenb_";
+const ANM_IMG_A = "./img/jyankena_";
+const AREA_ANM_IMG_D = "anime_imgd";
+const AREA_ANM_IMG_C = "anime_imgc";
+const AREA_ANM_IMG_B = "anime_imgb";
+const AREA_ANM_IMG_A = "anime_imga";
 
 const MY_SOCORE = "my_score";
 
@@ -56,3 +64,16 @@ let ELM_area_my_socre;
 let ELM_area_ranking;
 let ELM_area_vir;
 let ELM_area_set;
+let ELM_area_anime_a;
+let ELM_area_anime_b;
+let ELM_area_anime_c;
+let ELM_area_anime_d;
+
+
+const ANIME_img_a = [ANM_IMG_A + "01.png", ANM_IMG_A + "02.png", ANM_IMG_A + "03.png", ANM_IMG_A + "04.png"];
+const ANIME_img_b = [ANM_IMG_B + "01.png", ANM_IMG_B + "02.png", ANM_IMG_B + "03.png", ANM_IMG_B + "04.png", ANM_IMG_B + "05.png", ANM_IMG_B + "06.png", ANM_IMG_B + "07.png", ANM_IMG_B + "08.png", ANM_IMG_B + "09.png", ANM_IMG_B + "10.png"];
+const ANIME_img_c = [ANM_IMG_C + "01.png", ANM_IMG_C + "02.png", ANM_IMG_C + "03.png", ANM_IMG_C + "04.png", ANM_IMG_C + "05.png", ANM_IMG_C + "06.png", ANM_IMG_C + "07.png", ANM_IMG_C + "08.png", ANM_IMG_C + "09.png", ANM_IMG_C + "10.png",
+ANM_IMG_C + "11.png", ANM_IMG_C + "12.png", ANM_IMG_C + "13.png", ANM_IMG_C + "14.png", ANM_IMG_C + "15.png", ANM_IMG_C + "16.png", ANM_IMG_C + "17.png", ANM_IMG_C + "18.png", ANM_IMG_C + "19.png", ANM_IMG_C + "20.png",
+ANM_IMG_C + "21.png", ANM_IMG_C + "22.png", ANM_IMG_C + "23.png", ANM_IMG_C + "24.png", ANM_IMG_C + "25.png", ANM_IMG_C + "26.png", ANM_IMG_C + "27.png", ANM_IMG_C + "28.png", ANM_IMG_C + "29.png", ANM_IMG_C + "30.png",
+ANM_IMG_C + "31.png", ANM_IMG_C + "32.png", ANM_IMG_C + "33.png", ANM_IMG_C + "34.png", ANM_IMG_C + "35.png", ANM_IMG_C + "36.png", ANM_IMG_C + "37.png", ANM_IMG_C + "38.png", ANM_IMG_C + "39.png", ANM_IMG_C + "40.png"];
+
