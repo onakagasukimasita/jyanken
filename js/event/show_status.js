@@ -38,14 +38,14 @@ function showGamesOfASet(games) {
 }
 
 function showPlayerWin(){
-  ELM_img_cp.src ="./cp02.jpg";
-  ELM_img_me.src ="./me03.jpg";
+  ELM_img_cp.src ="./img/cp02.jpg";
+  ELM_img_me.src ="./img/me03.jpg";
 }
 function showPlayerLose(){
-  ELM_img_cp.src ="./cp03.jpg";
-  ELM_img_me.src ="./me02.jpg";
+  ELM_img_cp.src ="./img/cp03.jpg";
+  ELM_img_me.src ="./img/me02.jpg";
 }
 function showPlayerEven(){
-  ELM_img_cp.src ="./cp01.jpg";
-  ELM_img_me.src ="./me01.jpg";
+  ELM_img_cp.src ="./img/cp01.jpg";
+  ELM_img_me.src ="./img/me01.jpg";
 }
