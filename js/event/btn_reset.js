@@ -16,10 +16,10 @@ function reset() {
   ELM_btn_reset.style.display = "none";
 
   //スタート画面を表示する
+
   ELM_area_start.style.display = "block";
   ELM_area_ranking.style.display = "block";
-  ELM_img_main.style.display = "block";
-  ELM_img_main.src = "./img/jyanken_start.jpg";
+  ELM_area_anime_a.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', "./img/jyanken_start.jpg");
   ELM_btn_start.style.display = "block";
   showHighScore(high_scores);
 }
