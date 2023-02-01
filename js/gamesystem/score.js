@@ -11,7 +11,6 @@ function resetScore(){
 function addScore(){
   if(victories>0){
     my_score = my_score + WINNING_POINT*victories;
-
   }else{
     my_score = my_score + WINNING_POINT;
   }
