@@ -48,7 +48,6 @@ function showResult(res, cp_hand) {
     ELM_cp_result.innerText = HAND[cp_hand];
     ELM_kekka.innerText = res;
 }
-
 function resetResult() {
     ELM_kekka.innerText = RESULT_DEFAULT;
 }
